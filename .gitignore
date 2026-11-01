@@ -1,0 +1,15 @@
+# Allow-list: ignore everything at the top level, then re-include what is published.
+/*
+!/.gitignore
+!/README.md
+!/requirements.txt
+!/src/
+!/docs/
+!/dataset/
+
+# Raw data is not redistributed (licensed vendor data); only the README is tracked.
+/dataset/*
+!/dataset/README.md
+
+**/__pycache__/
+*.pyc
